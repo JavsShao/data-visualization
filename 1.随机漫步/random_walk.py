@@ -17,6 +17,7 @@ class RandomWalk():
         计算随机漫步包含的所有点
         :return:
         """
+        # 不断漫步, 直到列表达到指定的长度
         while len(self.x_values) < self.num_points:
             # 决定前进方向以及沿这个方向前进的距离
             x_direction = choice([1, -1])
