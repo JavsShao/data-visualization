@@ -4,11 +4,11 @@ from random_walk import RandomWalk
 
 while True:
     # 创建一个RandomWalk实例, 并将其中包含的点都绘制出来
-    rw = RandomWalk()
+    rw = RandomWalk(5000)
     rw.fill_walk()
 
     point_numbers = list(range(rw.num_points))
-    plt.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=125)
+    plt.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=1)
 
     # 突出起点和终点
     plt.scatter(0, 0, c='yellow', edgecolors='none', s=100)
