@@ -24,7 +24,7 @@ fig = plt.figure(dpi=128, figsize=(10, 6))
 plt.plot(dates, highs, c='red')
 
 # 设置图形的格式
-plt.title("Daily high temperatures, July 2014", fontsize=24)
+plt.title("Daily high temperatures -  2014", fontsize=24)
 plt.xlabel('', fontsize=16)
 fig.autofmt_xdate()
 plt.ylabel('Temperatures(F)', fontsize=16)
